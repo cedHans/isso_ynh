@@ -40,6 +40,25 @@
                 },
                 "example": "/isso",
                 "default": "/isso"
+            },
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "ask": {
+                    "en": "Choose if Isso is exposed on the Internet",
+                    "fr": "Choisissez si Isso doit être exposé sur Internet"
+                },
+                "example": false,
+                "default": true
+            },
+            {
+                "name": "password",
+                "type": "password",
+                "ask": {
+                    "en": "Choose administrative password for Isso",
+                    "fr": "Définissez le mot de passe administrateur pour Isso"
+                },
+                "example": "Choose a password"
             }
         ]
     }
