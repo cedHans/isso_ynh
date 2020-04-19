@@ -42,6 +42,16 @@
                 "default": "/isso"
             },
             {
+                "name": "admin",
+                "type": "string",
+                "ask": {
+                    "en": "Choose an admin user for Isso",
+                    "fr": "Choisissez un utilisateur administrateur pour Isso"
+                },
+                "example": "admin",
+                "default": "admin"
+            },
+            {
                 "name": "is_public",
                 "type": "boolean",
                 "ask": {
