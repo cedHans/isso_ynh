@@ -1,0 +1,46 @@
+{
+    "name": "Isso",
+    "id": "isso",
+    "packaging_format": 1,
+    "description": {
+        "en": "A commenting server similar to Disqus",
+        "fr": "Un serveur de commentaires similaire à Disqus"
+    },
+    "url": "https://posativ.org/isso",
+    "version": "0.0.1",
+    "license": "free",
+    "maintainer": {
+        "name": "Benoit Petit",
+        "email": "bpetit@b0rk.in"
+    },
+    "requirements": {
+        "yunohost": ">= 3.7.1"
+    },
+    "multi_instance": false,
+    "services": [
+        "nginx"
+    ],
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for Isso",
+                    "fr": "Choisissez un domaine pour Isso"
+                },
+                "example": "domain.org"
+            },
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for Isso",
+                    "fr": "Choisissez un chemin pour Isso"
+                },
+                "example": "/isso",
+                "default": "/isso"
+            }
+        ]
+    }
+}
